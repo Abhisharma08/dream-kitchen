@@ -7,9 +7,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/logo';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#gallery', label: 'Gallery' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#benefits', label: 'Benefits' },
+  { href: '#products', label: 'Products' },
+  { href: '#why-us', label: 'Why Us' },
+  { href: '#applications', label: 'Applications' },
+  { href: '#faq', label: 'FAQs' },
 ];
 
 export default function Header() {
@@ -32,7 +34,7 @@ export default function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild>
-            <a href="#cta">Free Quote</a>
+            <a href="#home">Free Consultation</a>
           </Button>
         </div>
         <div className="md:hidden">
@@ -62,7 +64,7 @@ export default function Header() {
                 </nav>
                 <div className="mt-8">
                   <Button asChild className="w-full">
-                    <a href="#cta" onClick={() => setIsOpen(false)}>Free Quote</a>
+                    <a href="#home" onClick={() => setIsOpen(false)}>Free Consultation</a>
                   </Button>
                 </div>
               </div>

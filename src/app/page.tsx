@@ -1,11 +1,14 @@
 import Header from '@/components/header';
 import HeroSection from '@/components/hero-section';
-import ServicesSection from '@/components/services-section';
-import GallerySection from '@/components/gallery-section';
 import Footer from '@/components/footer';
 import AnimatedSection from '@/components/animated-section';
-import CtaSection from '@/components/cta-section';
 import StickyEnquireButton from '@/components/sticky-enquire-button';
+import KeyBenefitsSection from '@/components/key-benefits-section';
+import ProductTypesSection from '@/components/product-types-section';
+import WhyChooseUsSection from '@/components/why-choose-us-section';
+import IdealApplicationsSection from '@/components/ideal-applications-section';
+import FaqSection from '@/components/faq-section';
+import CtaSection from '@/components/cta-section';
 
 export default function Home() {
   return (
@@ -14,10 +17,19 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <AnimatedSection>
-          <ServicesSection />
+          <KeyBenefitsSection />
         </AnimatedSection>
         <AnimatedSection>
-          <GallerySection />
+          <ProductTypesSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <WhyChooseUsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <IdealApplicationsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <FaqSection />
         </AnimatedSection>
         <AnimatedSection>
           <CtaSection />

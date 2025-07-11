@@ -8,7 +8,7 @@ export default function StickyEnquireButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
-    const section = document.getElementById("contact");
+    const section = document.getElementById("home");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -16,10 +16,9 @@ export default function StickyEnquireButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      const servicesSection = document.getElementById("services");
+      const servicesSection = document.getElementById("benefits");
       if (servicesSection) {
         const { top } = servicesSection.getBoundingClientRect();
-        // Show button if the top of the services section is at or above the viewport top
         if (top <= window.innerHeight) {
           setIsVisible(true);
         } else {
@@ -29,8 +28,6 @@ export default function StickyEnquireButton() {
     };
 
     window.addEventListener("scroll", toggleVisibility);
-
-    // Initial check in case the page loads scrolled down
     toggleVisibility();
 
     return () => window.removeEventListener("scroll", toggleVisibility);
@@ -49,7 +46,7 @@ export default function StickyEnquireButton() {
         className="w-full shadow-lg animate-glow"
         tabIndex={isVisible ? 0 : -1}
       >
-        Enquire Now
+        Get a Free Consultation
       </Button>
     </div>
   );
