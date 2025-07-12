@@ -91,7 +91,7 @@ export default function LeadForm() {
         setIsSubmitting(false);
 
         if (result.success) {
-            router.push('/thank-you');
+            router.push('/thank-you?success=true');
         } else {
             toast({
                 title: "Submission Failed",
@@ -104,7 +104,7 @@ export default function LeadForm() {
     return (
         <Card className="bg-background/90 backdrop-blur-sm border-border/50">
             <CardHeader>
-                <CardTitle className="font-headline text-2xl text-primary">Get a Free Consultation</CardTitle>
+                <CardTitle className="font-headline text-2xl text-primary">Get a Free Quote</CardTitle>
                 <CardDescription>
                     {step === 1 ? "Step 1 of 2: Your details" : "Step 2 of 2: Project details"}
                 </CardDescription>
@@ -201,7 +201,7 @@ export default function LeadForm() {
                             ) : (
                                 <Button type="submit" className="w-full" disabled={isSubmitting}>
                                     {isSubmitting && <Loader2 className="animate-spin mr-2" />}
-                                    Request Consultation
+                                    Request Quote
                                 </Button>
                             )}
                         </div>

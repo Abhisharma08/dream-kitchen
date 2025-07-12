@@ -34,7 +34,7 @@ export default function Header() {
         </nav>
         <div className="hidden md:block">
           <Button asChild>
-            <a href="#home">Free Consultation</a>
+            <a href="#home">Get a Free Quote</a>
           </Button>
         </div>
         <div className="md:hidden">
@@ -64,7 +64,7 @@ export default function Header() {
                 </nav>
                 <div className="mt-8">
                   <Button asChild className="w-full">
-                    <a href="#home" onClick={() => setIsOpen(false)}>Free Consultation</a>
+                    <a href="#home" onClick={() => setIsOpen(false)}>Get a Free Quote</a>
                   </Button>
                 </div>
               </div>

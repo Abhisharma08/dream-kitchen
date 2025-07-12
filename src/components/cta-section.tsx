@@ -13,7 +13,7 @@ export default function CtaSection() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" asChild className="w-full sm:w-auto">
-                <a href="#home">Request a Free Consultation</a>
+                <a href="#home">Request a Free Quote</a>
             </Button>
             <Button size="lg" variant="outline" asChild className="w-full sm:w-auto">
                 <a href="#">Download Product Brochure</a>

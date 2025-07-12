@@ -46,7 +46,7 @@ export default function StickyEnquireButton() {
         className="w-full shadow-lg animate-glow"
         tabIndex={isVisible ? 0 : -1}
       >
-        Get a Free Consultation
+        Get a Free Quote
       </Button>
     </div>
   );

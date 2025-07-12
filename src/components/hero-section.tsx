@@ -20,14 +20,14 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white max-w-2xl text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-headline tracking-tight">
-              Transform Office Spaces with Sleek, Functional Aluminium Glass Partitions
+              <span className="text-primary">Transform</span> Office Spaces with Sleek, Functional <span className="text-primary">Aluminium Glass Partitions</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl font-body text-gray-300">
               Discover premium partition systems designed for modern workspaces — combining style, flexibility, and efficiency. Bring light, privacy, and productivity to life.
             </p>
             <div className="mt-8">
               <Button size="lg" asChild>
-                <a href="#contact">Get a Free Consultation</a>
+                <a href="#contact">Get a Free Quote</a>
               </Button>
             </div>
           </div>
