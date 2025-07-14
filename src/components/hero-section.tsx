@@ -7,7 +7,7 @@ export default function HeroSection() {
     <section id="home" className="relative bg-secondary/20">
       <div className="absolute inset-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.43.13_PM_1_gzioxc.jpg"
           alt="Stylish sliding partition door in a modern living room"
           data-ai-hint="modern interior"
           fill
@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="relative container mx-auto px-4 py-24 sm:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white max-w-2xl text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-headline tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-body tracking-tight">
               <span className="text-primary">Transform</span> Office Spaces with Sleek, Functional <span className="text-primary">Aluminium Glass Partitions</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl font-body text-gray-300">

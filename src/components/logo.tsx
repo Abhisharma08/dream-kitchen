@@ -6,10 +6,10 @@ export default function Logo() {
       <Image
         src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752230081/Alu_Empire_Logo-removebg-preview_nrlo91.png"
         alt="AluEmpire Logo"
-        width={180}
-        height={40}
+        width={225}
+        height={50}
         priority
-        className="h-10 w-auto"
+        className="h-12 w-auto"
       />
     </a>
   );

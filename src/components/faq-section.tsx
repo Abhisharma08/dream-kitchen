@@ -29,7 +29,7 @@ import {
       <section id="faq" className="py-20 sm:py-32">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold font-headline text-primary sm:text-4xl">FAQs</h2>
+            <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">FAQs</h2>
           </div>
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">

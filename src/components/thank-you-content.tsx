@@ -11,6 +11,7 @@ import Footer from '@/components/footer';
 declare global {
   interface Window {
     dataLayer: any[];
+    gtag: (...args: any[]) => void;
   }
 }
 
@@ -26,12 +27,18 @@ export default function ThankYouContent() {
       return;
     }
     
-    // Fire conversion event
+    // Fire GTM Data Layer event
     if (typeof window.dataLayer !== 'undefined') {
       window.dataLayer.push({
         event: 'form_submission_success',
-        // You can add more data here if needed
-        // e.g., form_name: 'LeadForm'
+      });
+    }
+
+    // Fire Google Ads Conversion Event
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+          'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+          // You can add more parameters here like transaction_id, value, currency
       });
     }
 
@@ -49,7 +56,7 @@ export default function ThankYouContent() {
       <main className="flex-grow flex items-center justify-center">
         <div className="text-center p-8 max-w-lg mx-auto">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-6" />
-          <h1 className="text-3xl sm:text-4xl font-bold font-headline text-primary mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold font-body text-primary mb-4">
             Thank You!
           </h1>
           <p className="text-lg text-muted-foreground mb-8">

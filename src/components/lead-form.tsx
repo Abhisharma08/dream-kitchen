@@ -20,6 +20,13 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useToast } from "@/hooks/use-toast";
 import { submitStep1, submitStep2 } from "@/app/actions";
 import { Loader2 } from "lucide-react";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -30,6 +37,9 @@ const formSchema = z.object({
   }),
   phone: z.string().min(10, {
     message: "Phone number must be at least 10 digits.",
+  }),
+  requirement: z.string({
+    required_error: "Please select a requirement.",
   }),
   designation: z.string().min(2, {
     message: "Designation is required.",
@@ -50,6 +60,7 @@ export default function LeadForm() {
             name: "",
             email: "",
             phone: "",
+            requirement: undefined,
             designation: "",
             location: "",
         },
@@ -84,6 +95,7 @@ export default function LeadForm() {
         setIsSubmitting(true);
         const result = await submitStep2({
             email: values.email,
+            requirement: values.requirement,
             designation: values.designation,
             location: values.location,
         });
@@ -102,9 +114,9 @@ export default function LeadForm() {
     }
 
     return (
-        <Card className="bg-background/90 backdrop-blur-sm border-border/50">
+        <Card className="bg-background/80 backdrop-blur-sm border-border/50">
             <CardHeader>
-                <CardTitle className="font-headline text-2xl text-primary">Get a Free Quote</CardTitle>
+                <CardTitle className="font-body text-2xl text-primary">Get a Free Quote</CardTitle>
                 <CardDescription>
                     {step === 1 ? "Step 1 of 2: Your details" : "Step 2 of 2: Project details"}
                 </CardDescription>
@@ -158,6 +170,27 @@ export default function LeadForm() {
                         
                         {step === 2 && (
                              <>
+                                <FormField
+                                    control={form.control}
+                                    name="requirement"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Requirement for?</FormLabel>
+                                            <Select onValueChange={field.onChange} defaultValue={field.value} disabled={isSubmitting}>
+                                                <FormControl>
+                                                    <SelectTrigger>
+                                                        <SelectValue placeholder="Select requirement type" />
+                                                    </SelectTrigger>
+                                                </FormControl>
+                                                <SelectContent>
+                                                    <SelectItem value="Office">Office</SelectItem>
+                                                    <SelectItem value="Home">Home</SelectItem>
+                                                </SelectContent>
+                                            </Select>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
                                 <FormField
                                     control={form.control}
                                     name="designation"

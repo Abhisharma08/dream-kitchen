@@ -11,6 +11,7 @@ const step1Schema = z.object({
 
 const step2Schema = z.object({
   email: z.string().email(), // Email is needed to find and update the contact
+  requirement: z.string(),
   designation: z.string(),
   location: z.string(),
 });
@@ -139,6 +140,7 @@ export async function submitStep1(data: z.infer<typeof step1Schema>) {
 
 export async function submitStep2(data: z.infer<typeof step2Schema>) {
   const properties = [
+    { property: 'requirement_for', value: data.requirement },
     { property: 'jobtitle', value: data.designation },
     { property: 'city', value: data.location },
   ];

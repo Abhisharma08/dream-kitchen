@@ -1,7 +1,5 @@
 import { Suspense } from 'react';
-import { CheckCircle, Loader2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Loader2 } from 'lucide-react';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import ThankYouContent from '@/components/thank-you-content';
@@ -20,8 +18,18 @@ function ThankYouFallback() {
 
 export default function ThankYouPage() {
     return (
-        <Suspense fallback={<ThankYouFallback />}>
-            <ThankYouContent />
-        </Suspense>
+        <>
+            <noscript>
+                <iframe
+                    src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+                    height="0"
+                    width="0"
+                    style={{ display: 'none', visibility: 'hidden' }}
+                ></iframe>
+            </noscript>
+            <Suspense fallback={<ThankYouFallback />}>
+                <ThankYouContent />
+            </Suspense>
+        </>
     );
 }

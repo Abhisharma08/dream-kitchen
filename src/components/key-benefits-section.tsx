@@ -34,7 +34,7 @@ export default function KeyBenefitsSection() {
     <section id="benefits" className="py-20 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-3xl font-bold font-headline text-primary sm:text-4xl">Key Benefits of Our Partition Systems</h2>
+          <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">Key Benefits of Our Partition Systems</h2>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {benefits.slice(0, 5).map((benefit, index) => (
@@ -42,7 +42,7 @@ export default function KeyBenefitsSection() {
               <CardHeader className="p-6">
                 <div className='flex items-center gap-4'>
                     {benefit.icon}
-                    <CardTitle className="font-headline text-xl">{benefit.title}</CardTitle>
+                    <CardTitle className="font-body text-xl">{benefit.title}</CardTitle>
                 </div>
                 <CardDescription className="mt-4 text-base text-muted-foreground pt-4 border-t border-border/20">{benefit.description}</CardDescription>
               </CardHeader>

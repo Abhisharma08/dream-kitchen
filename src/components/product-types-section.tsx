@@ -7,7 +7,7 @@ const products = [
   {
     name: 'Single-Glazed Partitions',
     description: 'Sleek, transparent, and cost-effective, our single-glazed partitions create bright, open environments without sacrificing style. Ideal for maximising light and space.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.15_PM_ivbbij.jpg',
     aiHint: 'office partition',
     bestFor: [
       'General office spaces',
@@ -18,7 +18,7 @@ const products = [
   {
     name: 'Double-Glazed (DGU) Partitions',
     description: 'Offering superior acoustic and thermal insulation, DGU partitions are perfect for creating quiet, confidential spaces like meeting rooms and private offices.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_2_ru49cq.jpg',
     aiHint: 'glass wall',
     bestFor: [
       'Meeting & conference rooms',
@@ -29,7 +29,7 @@ const products = [
   {
     name: 'Sliding Glass Partitions',
     description: 'Maximise flexibility with our elegant sliding partitions. Effortlessly transform large rooms into smaller, functional zones with a smooth, space-saving mechanism.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_1_wmhkuw.jpg',
     aiHint: 'sliding door',
     bestFor: [
       'Flexible workspaces',
@@ -40,7 +40,7 @@ const products = [
   {
     name: 'Frameless Glass Partitions',
     description: 'For a truly minimalist and high-end aesthetic, our frameless partitions offer uninterrupted views and a seamless, modern finish that elevates any interior.',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_ctfedf.jpg',
     aiHint: 'frameless glass',
     bestFor: [
       'Executive suites & boardrooms',
@@ -58,7 +58,7 @@ export default function ProductTypesSection() {
           <div className="inline-flex items-center justify-center mb-4">
             <Sparkles className="w-8 h-8 text-primary" />
           </div>
-          <h2 className="text-3xl font-bold font-headline text-primary sm:text-4xl">Our Products</h2>
+          <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">Our Products</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Explore our range of aluminium and glass partition systems, designed for every need.
           </p>
@@ -78,7 +78,7 @@ export default function ProductTypesSection() {
                 </div>
               </CardHeader>
               <CardContent className="p-6 flex flex-col flex-grow">
-                <CardTitle className="font-headline text-2xl text-primary">{product.name}</CardTitle>
+                <CardTitle className="font-body text-2xl text-primary">{product.name}</CardTitle>
                 <p className="mt-2 text-muted-foreground flex-grow">{product.description}</p>
                 <div className="mt-6">
                   <h4 className="font-semibold font-body text-foreground">Best For:</h4>
