@@ -93,7 +93,7 @@ export default function ProductTypesSection() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-border/20">
                     <Button asChild className="w-full">
-                        <a href="#home">Enquire Now</a>
+                        <a href="#lead-form">Enquire Now</a>
                     </Button>
                 </div>
               </CardContent>

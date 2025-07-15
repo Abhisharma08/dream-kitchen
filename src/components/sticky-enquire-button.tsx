@@ -8,7 +8,7 @@ export default function StickyEnquireButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
-    const section = document.getElementById("home");
+    const section = document.getElementById("lead-form");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
