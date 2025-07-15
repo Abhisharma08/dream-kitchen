@@ -133,7 +133,7 @@ export default function LeadForm() {
                                         <FormItem>
                                             <FormLabel>Full Name</FormLabel>
                                             <FormControl>
-                                                <Input placeholder="Your Name" {...field} disabled={isSubmitting} />
+                                                <Input placeholder="John Doe" {...field} disabled={isSubmitting} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -159,7 +159,7 @@ export default function LeadForm() {
                                         <FormItem>
                                             <FormLabel>Phone Number</FormLabel>
                                             <FormControl>
-                                                <Input placeholder="e.g. 9876543210" {...field} disabled={isSubmitting} />
+                                                <Input placeholder="e.g. 123-456-7890" {...field} disabled={isSubmitting} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -211,7 +211,7 @@ export default function LeadForm() {
                                         <FormItem>
                                             <FormLabel>Location</FormLabel>
                                             <FormControl>
-                                                <Input placeholder="e.g. New Delhi" {...field} disabled={isSubmitting} />
+                                                <Input placeholder="e.g. New York, NY" {...field} disabled={isSubmitting} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>

@@ -27,7 +27,7 @@ export default function HeroSection() {
             </p>
             <div className="mt-8">
               <Button size="lg" asChild>
-                <a href="#contact">Get a Free Quote</a>
+                <a href="#home">Get a Free Quote</a>
               </Button>
             </div>
           </div>
