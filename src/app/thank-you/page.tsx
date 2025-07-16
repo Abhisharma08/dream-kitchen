@@ -21,7 +21,7 @@ export default function ThankYouPage() {
         <>
             <noscript>
                 <iframe
-                    src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+                    src="https://www.googletagmanager.com/ns.html?id=GTM-WT88LQZG"
                     height="0"
                     width="0"
                     style={{ display: 'none', visibility: 'hidden' }}
