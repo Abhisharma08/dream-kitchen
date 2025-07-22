@@ -5,48 +5,24 @@ import { Sparkles, CheckCircle } from 'lucide-react';
 
 const products = [
   {
-    name: 'Single-Glazed Partitions',
-    description: 'Sleek, transparent, and cost-effective, our single-glazed partitions create bright, open environments without sacrificing style. Ideal for maximising light and space.',
+    name: 'Windows',
+    description: 'From sliding to casement designs, our uPVC windows combine style with functionality. Enjoy wide-open views, fresh air, and exceptional performance.',
     image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.15_PM_ivbbij.jpg',
-    aiHint: 'office partition',
-    bestFor: [
-      'General office spaces',
-      'Open-plan layouts',
-      'Areas where light is key',
-    ],
+    aiHint: 'Windows',
   },
   {
-    name: 'Double-Glazed (DGU) Partitions',
-    description: 'Offering superior acoustic and thermal insulation, DGU partitions are perfect for creating quiet, confidential spaces like meeting rooms and private offices.',
+    name: 'Doors',
+    description: 'Choose from a variety of uPVC doors that enhance your home’s entrance while ensuring security and energy efficiency. Stylish, sturdy, and weatherproof.',
     image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_2_ru49cq.jpg',
-    aiHint: 'glass wall',
-    bestFor: [
-      'Meeting & conference rooms',
-      'Private executive offices',
-      'Noise-sensitive environments',
-    ],
+    aiHint: 'Doors',
+    
   },
   {
-    name: 'Sliding Glass Partitions',
-    description: 'Maximise flexibility with our elegant sliding partitions. Effortlessly transform large rooms into smaller, functional zones with a smooth, space-saving mechanism.',
+    name: 'Accessories',
+    description: 'Complete your installation with premium accessories designed to complement and enhance your uPVC door and window systems.',
     image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_1_wmhkuw.jpg',
-    aiHint: 'sliding door',
-    bestFor: [
-      'Flexible workspaces',
-      'Coworking and shared areas',
-      'Adaptable room division',
-    ],
-  },
-  {
-    name: 'Frameless Glass Partitions',
-    description: 'For a truly minimalist and high-end aesthetic, our frameless partitions offer uninterrupted views and a seamless, modern finish that elevates any interior.',
-    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_ctfedf.jpg',
-    aiHint: 'frameless glass',
-    bestFor: [
-      'Executive suites & boardrooms',
-      'Modern, minimalist designs',
-      'Retail showrooms & entrances',
-    ],
+    aiHint: 'Accessories',
+   
   },
 ];
 
@@ -63,7 +39,7 @@ export default function ProductTypesSection() {
             Explore our range of aluminium and glass partition systems, designed for every need.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {products.map((product) => (
             <Card key={product.name} className="overflow-hidden bg-background border-border/20 hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <CardHeader className="p-0">
@@ -81,17 +57,8 @@ export default function ProductTypesSection() {
                 <CardTitle className="font-body text-2xl text-primary">{product.name}</CardTitle>
                 <p className="mt-2 text-muted-foreground flex-grow">{product.description}</p>
                 <div className="mt-6">
-                  <h4 className="font-semibold font-body text-foreground">Best For:</h4>
-                  <ul className="mt-2 space-y-2">
-                    {product.bestFor.map((item) => (
-                      <li key={item} className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-primary" />
-                        <span className="text-muted-foreground">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-                <div className="mt-6 pt-6 border-t border-border/20">
+                <div className="mt-0 pt-6 border-t border-border/20">
                     <Button asChild className="w-full">
                         <a href="#lead-form">Enquire Now</a>
                     </Button>
