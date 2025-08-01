@@ -8,12 +8,12 @@ import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -29,25 +29,28 @@ import {
 } from "@/components/ui/select";
 
 const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  phone: z.string().min(10, {
-    message: "Phone number must be at least 10 digits.",
-  }),
-  requirement: z.string({
-    required_error: "Please select a requirement.",
-  }),
-  designation: z.string().min(2, {
-    message: "Designation is required.",
-  }),
-  location: z.string().min(2, {
-    message: "Location is required.",
-  }),
+    name: z.string().min(2, {
+        message: "Name must be at least 2 characters.",
+    }),
+    email: z.string().email({
+        message: "Please enter a valid email address.",
+    }),
+    phone: z
+        .string()
+        .regex(/^[0-9]{10}$/, {
+            message: "Phone number must be exactly 10 digits.",
+        }),
+    requirement: z.string({
+        required_error: "Please select a requirement.",
+    }),
+    designation: z.string().min(2, {
+        message: "Designation is required.",
+    }),
+    location: z.string().min(2, {
+        message: "Location is required.",
+    }),
 });
+
 
 export default function LeadForm() {
     const [step, setStep] = useState(1);
@@ -159,17 +162,26 @@ export default function LeadForm() {
                                         <FormItem>
                                             <FormLabel>Phone Number</FormLabel>
                                             <FormControl>
-                                                <Input placeholder="e.g. 9876543210" {...field} disabled={isSubmitting} />
+                                                <Input
+                                                    type="tel"
+                                                    inputMode="numeric"
+                                                    pattern="\d{10}"
+                                                    maxLength={10}
+                                                    placeholder="e.g. 9876543210"
+                                                    {...field}
+                                                    disabled={isSubmitting}
+                                                />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
                                     )}
                                 />
+
                             </>
                         )}
-                        
+
                         {step === 2 && (
-                             <>
+                            <>
                                 <FormField
                                     control={form.control}
                                     name="requirement"
@@ -217,9 +229,9 @@ export default function LeadForm() {
                                         </FormItem>
                                     )}
                                 />
-                             </>
+                            </>
                         )}
-                        
+
                         <div className="flex gap-2 justify-end pt-2">
                             {step === 2 && (
                                 <Button type="button" variant="ghost" onClick={() => setStep(1)} disabled={isSubmitting}>

@@ -5,8 +5,8 @@ import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
-  title: 'AluEmpire | Sliding Partition Doors',
-  description: 'Transform your interiors with elegant, flexible, and space-saving sliding partition doors tailored to your design vision.',
+  title: 'Premium Modular Kitchens | Dream Kitchens',
+  description: 'Discover luxurious modular kitchens with sleek finishes and smart storage. Get a free quote today!',
 };
 
 export default function RootLayout({

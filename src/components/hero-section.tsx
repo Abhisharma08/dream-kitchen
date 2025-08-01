@@ -7,24 +7,28 @@ export default function HeroSection() {
     <section id="home" className="relative bg-secondary/20">
       <div className="absolute inset-0">
         <Image
-          src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.43.13_PM_1_gzioxc.jpg"
-          alt="Stylish sliding partition door in a modern living room"
+          src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1753860915/3d-rendering-white-wood-living-room-near-bedroom-upstair_agc7xh.jpg"
+          alt="Dream Kitchen Home Interior"
           data-ai-hint="modern interior"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/60" />
+        {/* Mobile: 80% black, Desktop (sm+): 60% black */}
+        <div className="absolute inset-0 bg-black/80 sm:bg-black/70" />
       </div>
+
       <div className="relative container mx-auto px-4 py-24 sm:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white max-w-2xl text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-body tracking-tight">
-              <span className="text-primary">Elevate</span> Your Living Space with Premium <span className="text-primary">uPVC Doors & Windows</span>
+              <span>Personalized</span> Interiors That Reflect{' '}
+              <span>Your Lifestyle</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl font-body text-gray-300">
-             Discover a smarter, stronger, and more sustainable way to style your home with Alu Empire’s high-performance uPVC doors and windows. Designed for durability, comfort, and modern aesthetics — we bring you lasting quality with minimal upkeep.
-
+              Explore our range of curated interior styles — from contemporary
+              minimalism to traditional charm — crafted to balance beauty and
+              utility in every space.
             </p>
             <div className="mt-8">
               <Button size="lg" asChild>

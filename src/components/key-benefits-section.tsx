@@ -1,36 +1,36 @@
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Sun, Volume2, Thermometer, Palette, Recycle, Leaf, HeartPulse, Ratio, Badge, BadgeCheck, Wrench } from 'lucide-react';
+import { Sun, Volume2, Thermometer, Palette, Recycle, Leaf, HeartPulse, Ratio, Badge, BadgeCheck, Wrench, Percent, BookCheck, ShieldCheck, LightbulbIcon, SparkleIcon } from 'lucide-react';
 
 const benefits = [
   {
     icon: <BadgeCheck className="w-10 h-10 text-primary" />,
-    title: 'Top-Tier Materials',
-    description: 'We use premium-grade uPVC to ensure long-lasting performance and finish.',
+    title: 'Tailored to Your Taste',
+    description: ' Choose from modern, classic, eclectic, or minimalist design languages.',
   },
   {
-    icon: <Ratio className="w-10 h-10 text-primary" />,
-    title: 'Custom Solutions',
-    description: 'Choose from a variety of designs, colors, and configurations to suit your space.',
+    icon: <SparkleIcon className="w-10 h-10 text-primary" />,
+    title: '20+ Years of Experience',
+    description: `We've transformed hundreds of homes with expertise and trust.`,
   },
   {
-    icon: <Wrench className="w-10 h-10 text-primary" />,
-    title: 'Expert Installation',
-    description: 'Fast, professional, and precise fitting by our skilled team.',
+    icon: <LightbulbIcon className="w-10 h-10 text-primary" />,
+    title: 'Full-Home Interior Solutions',
+    description: 'From kitchens to bedrooms and wardrobes to TV units — we do it all.',
   },
   {
-    icon: <Leaf className="w-10 h-10 text-primary" />,
-    title: 'Eco-Conscious Choice',
-    description: 'Our uPVC products are sustainable, recyclable, and energy-efficient.',
+    icon: <ShieldCheck className="w-10 h-10 text-primary" />,
+    title: 'Fast Turnaround with 10-Year Warranty',
+    description: 'Quick installations, high durability, and peace of mind built in.',
   },
   {
-    icon: <HeartPulse className="w-10 h-10 text-primary" />,
-    title: 'Trusted After-Sales Support',
-    description: 'We’re with you every step of the way, even after installation.',
+    icon: <Percent className="w-10 h-10 text-primary" />,
+    title: 'Smart Budgeting & EMI Options',
+    description: 'Flexible pricing and financing make your dream home accessible.',
   },
   {
-    icon: <Volume2 className="w-10 h-10 text-primary" />,
-    title: 'Noise Reduction Advantage',
-    description: 'Our uPVC doors and windows offer superior sound insulation, ensuring a quieter, more peaceful indoors.',
+    icon: <BookCheck className="w-10 h-10 text-primary" />,
+    title: 'Visit or Book Online',
+    description: 'Drop by our showroom or start with a free online estimate.',
   },
 ];
 
@@ -39,7 +39,7 @@ export default function KeyBenefitsSection() {
     <section id="benefits" className="py-20 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">Why Alu Empire?</h2>
+          <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">Why Dream Kitchens?</h2>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {benefits.slice(0, 6).map((benefit, index) => (

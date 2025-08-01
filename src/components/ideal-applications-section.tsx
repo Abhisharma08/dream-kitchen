@@ -1,12 +1,13 @@
-import { Building, Store, Briefcase, HeartPulse, Utensils } from 'lucide-react';
+import { Building, Briefcase, House, Construction, Fence } from 'lucide-react';
 import { Card, CardHeader, CardTitle } from './ui/card';
+import Home from '@/app/page';
 
 const applications = [
-  { icon: <Briefcase className="w-8 h-8 text-primary" />, text: 'Corporate Offices & Private Suites' },
-  { icon: <Building className="w-8 h-8 text-primary" />, text: 'Conference & Meeting Rooms' },
-  { icon: <Store className="w-8 h-8 text-primary" />, text: 'Retail Showrooms & Boutiques' },
-  { icon: <HeartPulse className="w-8 h-8 text-primary" />, text: 'Healthcare Facilities & Clinics' },
-  { icon: <Utensils className="w-8 h-8 text-primary" />, text: 'Hospitality: Hotels, Cafés & Restaurants' },
+  { icon: <Building className="w-8 h-8 text-primary" />, text: 'Apartments & Villas' },
+  { icon: <House className="w-8 h-8 text-primary" />, text: 'New Home Interiors' },
+  { icon: <Construction className="w-8 h-8 text-primary" />, text: 'Renovation Projects' },
+  { icon: <Fence className="w-8 h-8 text-primary" />, text: 'Rental Property Upgrades' },
+  { icon: <Briefcase className="w-8 h-8 text-primary" />, text: 'Commercial & Office Interiors' },
 ];
 
 export default function IdealApplicationsSection() {

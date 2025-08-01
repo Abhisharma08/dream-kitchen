@@ -1,8 +1,8 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-   basePath: '/uPVC-doors-and-windows',
-  trailingSlash: true,
+  //  basePath: '/uPVC-doors-and-windows',
+  // trailingSlash: true,
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,

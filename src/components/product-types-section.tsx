@@ -5,23 +5,30 @@ import { Sparkles, CheckCircle } from 'lucide-react';
 
 const products = [
   {
-    name: 'Windows',
-    description: 'From sliding to casement designs, our uPVC windows combine style with functionality. Enjoy wide-open views, fresh air, and exceptional performance.',
+    name: 'Modular Kitchens',
+    description: 'Stylish, functional kitchens with customised layouts and smart storage, built to suit your daily needs and taste.',
     image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.15_PM_ivbbij.jpg',
-    aiHint: 'Windows',
+    aiHint: 'Modular Kitchens',
   },
   {
-    name: 'Doors',
-    description: 'Choose from a variety of uPVC doors that enhance your home’s entrance while ensuring security and energy efficiency. Stylish, sturdy, and weatherproof.',
+    name: 'Wardrobes & Storage',
+    description: 'Sliding, hinged, or walk-in — our wardrobes are built to blend style with efficient space management.',
     image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_2_ru49cq.jpg',
-    aiHint: 'Doors',
+    aiHint: 'Wardrobes & Storage',
     
   },
   {
-    name: 'Accessories',
-    description: 'Complete your installation with premium accessories designed to complement and enhance your uPVC door and window systems.',
+    name: 'Living & Dining Spaces',
+    description: 'From TV units to wall paneling and dining setups — we design warm, welcoming social spaces for every home.',
     image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_1_wmhkuw.jpg',
-    aiHint: 'Accessories',
+    aiHint: 'Living & Dining Spaces',
+   
+  },
+   {
+    name: 'Bedroom Interiors',
+    description: 'Create serene, restful bedrooms with coordinated themes, clever storage, and beautiful finishing touches.',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_1_wmhkuw.jpg',
+    aiHint: 'Bedroom Interiors',
    
   },
 ];
@@ -34,12 +41,12 @@ export default function ProductTypesSection() {
           <div className="inline-flex items-center justify-center mb-4">
             <Sparkles className="w-8 h-8 text-primary" />
           </div>
-          <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">Our Products</h2>
+          <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">Our Interior Solutions</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Explore our range of aluminium and glass partition systems, designed for every need.
+            Explore our range of home interior offerings crafted for every room and purpose.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {products.map((product) => (
             <Card key={product.name} className="overflow-hidden bg-background border-border/20 hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <CardHeader className="p-0">
