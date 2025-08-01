@@ -5,8 +5,8 @@ import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
-  title: 'Premium Modular Kitchens | Dream Kitchens',
-  description: 'Discover luxurious modular kitchens with sleek finishes and smart storage. Get a free quote today!',
+  title: 'Dream Kitchens – Stylish Home Interiors & Modular Solutions in Bhopal',
+  description: 'Transform your home with Dream Kitchens, Bhopal’s trusted name for modular kitchens and custom interiors. From bedrooms to living spaces, we create functional, stylish homes tailored to your lifestyle. Book your free consultation today.',
 };
 
 export default function RootLayout({
