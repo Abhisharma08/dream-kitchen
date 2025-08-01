@@ -7,27 +7,27 @@ const products = [
   {
     name: 'Modular Kitchens',
     description: 'Stylish, functional kitchens with customised layouts and smart storage, built to suit your daily needs and taste.',
-    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.15_PM_ivbbij.jpg',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1754024721/beautiful-kitchen-interior-design_1_bspnyy.jpg',
     aiHint: 'Modular Kitchens',
   },
   {
     name: 'Wardrobes & Storage',
     description: 'Sliding, hinged, or walk-in — our wardrobes are built to blend style with efficient space management.',
-    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_2_ru49cq.jpg',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1754024817/3d-rendering-luxury-scandinavian-wood-walk-closet-with-wardrobe-make-up-table_1_qkliun.jpg',
     aiHint: 'Wardrobes & Storage',
     
   },
   {
     name: 'Living & Dining Spaces',
     description: 'From TV units to wall paneling and dining setups — we design warm, welcoming social spaces for every home.',
-    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_1_wmhkuw.jpg',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1754024916/2_vj6fbk.png',
     aiHint: 'Living & Dining Spaces',
    
   },
    {
     name: 'Bedroom Interiors',
     description: 'Create serene, restful bedrooms with coordinated themes, clever storage, and beautiful finishing touches.',
-    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752499461/WhatsApp_Image_2025-07-14_at_5.46.14_PM_1_wmhkuw.jpg',
+    image: 'https://res.cloudinary.com/ddqqlfsjp/image/upload/v1754024721/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_1_jq86z4.jpg',
     aiHint: 'Bedroom Interiors',
    
   },
