@@ -7,20 +7,20 @@ import {
   
   const faqs = [
     {
-      question: "Difference between single vs double-glazed?",
-      answer: "Single-glazed: Offers transparency and affordability. DGU: Double-pane with insulated air/gas layer—superior soundproofing, energy efficiency, and condensation control."
+      question: "How long does it take to complete home interiors?",
+      answer: "Typically 4–8 weeks, depending on scope and customisations."
     },
     {
-      question: "Is it easy to maintain?",
-      answer: "Yes—glass requires simple wipes; aluminium resists corrosion. DGU helps prevent moisture on surfaces."
+      question: "Can I choose materials and colours?",
+      answer: "Absolutely! We offer full customisation for all rooms."
     },
     {
-      question: "Can I match my office's interior branding?",
-      answer: "Absolutely—choose from frosted, tinted, or clear glass, plus custom frame finishes to complement your interiors."
+      question: "Do you provide design consultations?",
+      answer: "Yes, our expert team offers free site visits and 3D layout planning."
     },
     {
-      question: "How quick is installation?",
-      answer: "Modular, prefabricated profiles and concealed fittings allow swift, low-impact installations."
+      question: "Is EMI or phased payment available?",
+      answer: "Yes, flexible payment options are available for your convenience."
     },
   ]
   

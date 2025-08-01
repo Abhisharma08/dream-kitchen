@@ -6,10 +6,10 @@ export default function CtaSection() {
       <div className="container mx-auto px-4">
         <div className="text-center">
             <h2 className="text-3xl font-bold font-body text-primary sm:text-4xl">
-            Ready to elevate your workspace with style, privacy, and productivity?
+            Ready to bring your dream home to life with style and comfort?
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Contact us now for a free project estimate and expert space consultation.
+            Reach out now for a free consultation and customised quote.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" asChild className="w-full sm:w-auto">
