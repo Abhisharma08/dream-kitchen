@@ -22,8 +22,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white max-w-2xl text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-body tracking-tight">
-              <span>Personalized</span> Interiors That Reflect{' '}
-              <span>Your Lifestyle</span>
+              Premium Home Interior Renovation Solution in Bhopal
             </h1>
             <p className="mt-6 text-lg md:text-xl font-body text-gray-300">
               Explore our range of curated interior styles — from contemporary
