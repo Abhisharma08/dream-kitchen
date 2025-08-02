@@ -187,7 +187,7 @@ export default function LeadForm() {
                                     name="requirement"
                                     render={({ field }) => (
                                         <FormItem>
-                                            <FormLabel>Requirement for?</FormLabel>
+                                            <FormLabel>Product Requirement</FormLabel>
                                             <Select onValueChange={field.onChange} defaultValue={field.value} disabled={isSubmitting}>
                                                 <FormControl>
                                                     <SelectTrigger>
@@ -195,8 +195,13 @@ export default function LeadForm() {
                                                     </SelectTrigger>
                                                 </FormControl>
                                                 <SelectContent>
-                                                    <SelectItem value="Office">Office</SelectItem>
-                                                    <SelectItem value="Home">Home</SelectItem>
+                                                    <SelectItem value="Modular Kitchen">Modular Kitchen</SelectItem>
+                                                    <SelectItem value="Master Bedroom">Master Bedroom</SelectItem>
+                                                    <SelectItem value="Living Room">Living Room</SelectItem>
+                                                    <SelectItem value="Dining Room">Dining Room</SelectItem>
+                                                    <SelectItem value="Study Room">Study Room</SelectItem>
+                                                    <SelectItem value="Drawing Room">Drawing Room</SelectItem>
+                                                    <SelectItem value="Guest Room">Guest Room</SelectItem>
                                                 </SelectContent>
                                             </Select>
                                             <FormMessage />
